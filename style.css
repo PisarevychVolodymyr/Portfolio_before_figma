@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    height:100vh;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    box-shadow: 0 5px 10px #ffb300;
+}
+header .logo{
+    font-size:24px;
+    font-weight: 900;
+    color:#000;
+    transition: .5s;
+}
+header .logo:hover{
+    transform: scale(1.5);
+}
+
+header nav ul li {
+    position: relative;
+    float:left;
+}
+
+header nav ul li a{
+    padding: 15px;
+    color: #000000;
+    font-size:20px;
+    display: block;
+    transition: .5s;
+}
+header nav ul li a:hover{
+    background: #000000;
+    color: #fff;
+}
+
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: #fff;
+    display: none;
+}
+nav ul li ul li{
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav ul li ul li ul{
+    left: 180px;
+    top: 0;
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+h1{
+    margin-top: 5%;
+    margin-left: 10%;
+    color:#ffffff;
+}
+.port{
+    padding-bottom: 3%;
+    padding-top: 1%;
+    background: url(images/scale_2400.jpg) no-repeat;
+}
+.about{
+    background-color: rgba(0,0,0,.8);
+    border-top: #fda80089 10px solid;
+    border-bottom: #fda80089 10px solid;
+    width: 100%;
+    height: 450px;
+}
+.about_text{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 2%;
+}
+
+.img_hob{
+    display: flex;
+    height: 40%;
+}
+.img_hob img{
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 3px solid white;
+}
+.skills_all{
+    border-bottom: #fda80089 10px solid;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 90%;
+    padding-top: 2%;
+
+}
+.skills{
+    border-top: #fda80089 10px solid;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.skill-name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:22px;
+    font-weight: 700;
+    color:#fff;
+    text-transform: uppercase;
+    margin: 25px 0;
+    margin-left: 1%;
+    text-align: center;
+}
+.skill-bar{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height:14px;
+    background: #ffffffa9;
+    border-radius: 3px;
+}
+.skill-per{
+    height: 14px;
+    background: orange;
+    border-radius: 3px;
+    position: relative;
+}
+footer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    background: #000000;
+    padding: 20px;
+    margin: 0 auto;
+    padding-top: 25px;
+    opacity: 0.8;
+}
+footer a,p{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 65px;
+    transition: .5s;
+    line-height: 1.5;
+}
+footer nav a:hover{
+    border-bottom: 2px solid #fff;
+}
+.log {
+    margin:40px 0;
+    width: 100%;
+    font-weight: 900;
+    transition: 0.5s;
+}
+.log:hover{
+    transform: scale(1.1);
+}
+.social img{
+    width: 70px;
+    padding: 2%;
+    margin-bottom: 10px;
+    background: #000;
+    transition: 0.5s;
+    border-radius: 50%;
+}
+.social img:hover{
+    background: #ffffff;
+    border-radius: 50%;
+}
+.me{
+    height: 10%;
+    width: 120%;
+    transition: .5s;
+}
+.text_me{
+    font-size: 44px;
+    color: #ffffff;
+    display:flex;
+    margin:0% 20% 0% 45%;
+    width: 20%;
+    height: 30%;
+}
+button{
+    font-size: 24px;
+    height: 60px;
+    width: 240px;
+    margin: 10% 0% 0% 60%;
+    color: #000;
+    border: 3px solid black;
+    background-color: orange;
+    border-radius: 15px;
+    transition: .7s;
+}
+.me:hover{
+    transform: scale(1.1);
+}
+
+button:hover{
+    transform: scale(1.1);
+    color: orange;
+    background: #000;
+    border:3px solid orange;
+}
+.text{
+    font-family: 'Josefin Sans', sans-serif;
+    color:rgb(255, 255, 255); 
+    margin-left: 10%; 
+    font-size: 24px; 
+    width: 70%; 
+    margin-right: 15%; 
+    margin-top:40px;
+}
+
+@media screen and (max-width: 800px){
+    .me{
+        height: 100%;
+        width: 80%;
+        transition: .5s; 
+    }
+    .social{
+        width: 40px;
+        margin-bottom: 10px;
+        background: #000;
+        transition: 0.5s;
+        border-radius: 50%;
+    }
+    .img_hob{
+        height: 20%;
+    }
+}
